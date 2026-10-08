@@ -1,493 +1,178 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de información</title>
 
-    <title>Isaac David Sarkar Machado | Portafolio Deportivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f7fa;
+            color: #222;
+            margin: 25px;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        h1 {
+            color: #245b78;
+            text-align: center;
+        }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        h2 {
+            color: #a85b24;
+        }
 
+        section {
+            background-color: white;
+            border: 1px solid #c8dce5;
+            padding: 15px;
+            margin-bottom: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #9bb6c3;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d8eaf2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f8fa;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        button {
+            background-color: #397da0;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #285e79;
+        }
+
+        section:focus-within {
+            border-color: #397da0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 12px;
+            }
+
+            section {
+                overflow-x: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="particles"></div>
+    <h1 contenteditable="true">Información general</h1>
 
-<header>
+    <section>
+        <h2 contenteditable="true">Descripción</h2>
 
-<nav>
-
-<div class="logo">
-
-🧤 SARKAR
-
-</div>
-
-<ul>
-
-<li><a href="#inicio">Inicio</a></li>
-
-<li><a href="#sobremi">Sobre mí</a></li>
-
-<li><a href="#trayectoria">Trayectoria</a></li>
-
-<li><a href="#logros">Logros</a></li>
-
-<li><a href="#galeria">Galería</a></li>
-
-<li><a href="#objetivos">Objetivos</a></li>
-
-</ul>
-
-</nav>
-
-<section id="inicio" class="hero">
-
-<div class="hero-texto">
-
-<h1>
-
-ISAAC DAVID <br>
-
-<span>SARKAR MACHADO</span>
-
-</h1>
-
-<h2>
-
-Arquero de Fútbol Sala
-
-</h2>
-
-<p>
-
-Cada entrenamiento representa un paso más hacia mis sueños.
-Mi compromiso, disciplina y pasión por defender el arco
-me impulsan a superarme día tras día.
-
-</p>
-
-<a href="#sobremi" class="btn">
-
-Conoce mi historia
-
-</a>
-
-</div>
-
-<div class="hero-imagen">
-
-<img src="img/perfil.png" alt="Isaac Arquero">
-
-</div>
-
-</section>
-
-</header>
-
-<main>
-
-<section id="sobremi" class="glass">
-
-<h2>⚽ Sobre mí</h2>
-
-<p>
-
-Soy <strong>Isaac David Sarkar Machado</strong>,
-arquero de fútbol sala comprometido con crecer tanto dentro
-como fuera de la cancha.
-
-Mi camino deportivo ha estado marcado por la disciplina,
-la constancia y la pasión por defender cada balón como si
-fuera el último.
-
-He tenido la oportunidad de representar procesos deportivos
-importantes que han fortalecido mi carácter y aumentado
-mi deseo de llegar al máximo nivel del fútbol sala colombiano.
-
-Cada entrenamiento representa una oportunidad para aprender,
-cada partido una nueva experiencia y cada reto un paso más
-hacia mi sueño de convertirme en arquero profesional.
-
-</p>
-
-</section>
-
-<section id="trayectoria">
-
-<h2 class="titulo">
-
-Mi Trayectoria
-
-</h2>
-
-<div class="timeline">
-
-<div class="evento">
-
-<div class="contenido">
-
-<h3>Inicio Deportivo</h3>
-
-<p>
-
-Desde muy joven descubrí mi pasión por el fútbol sala.
-
-Elegí la posición de arquero porque encontré en ella la
-responsabilidad, el liderazgo y el deseo constante de proteger
-a mi equipo.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="evento">
-
-<div class="contenido">
-
-<h3>Microselección Bolívar</h3>
-
-<p>
-
-Ser convocado a la Microselección Bolívar representó uno de los
-primeros grandes pasos de mi carrera.
-
-Compartí con jugadores de alto nivel y adquirí experiencia
-en entrenamientos de mayor exigencia.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="evento">
-
-<div class="contenido">
-
-<h3>Microselección Colombia</h3>
-
-<p>
-
-Participar en procesos de la Microselección Colombia de Fútbol Sala
-ha sido una experiencia que fortaleció mi crecimiento deportivo.
-
-Representar estos colores significa disciplina, sacrificio y orgullo.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="evento">
-
-<div class="contenido">
-
-<h3>Guatapé Sub-20</h3>
-
-<p>
-
-Actualmente hago parte de la categoría Sub-20 de Guatapé,
-donde continúo perfeccionando mis capacidades técnicas,
-físicas y mentales para seguir creciendo como arquero.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="estadisticas">
-
-<h2 class="titulo">
-
-Mi Camino
-
-</h2>
-
-<div class="stats">
-
-<div class="stat">
-
-<h3 id="anios">
-
-0
-
-</h3>
-
-<p>
-
-Años de experiencia
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h3 id="convocatorias">
-
-0
-
-</h3>
-
-<p>
-
-Procesos de Selección
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h3 id="equipos">
-
-0
-
-</h3>
-
-<p>
-
-Equipos representados
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h3 id="objetivo">
-
-100%
-
-</h3>
-
-<p>
-
-Compromiso
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="logros">
-
-    <h2 class="titulo">🏆 Logros Deportivos</h2>
-
-    <div class="cards-logros">
-
-        <div class="logro">
-
-            <h3>🇨🇴 Microselección Colombia</h3>
-
-            <p>
-                Formar parte de un proceso de Microselección Colombia de
-                Fútbol Sala representó un paso importante en mi crecimiento
-                como arquero, permitiéndome competir y aprender en un entorno
-                de alto rendimiento.
-            </p>
-
-        </div>
-
-        <div class="logro">
-
-            <h3>💙 Microselección Bolívar</h3>
-
-            <p>
-                Ser convocado a la Microselección Bolívar fortaleció mi nivel
-                competitivo, mejorando mi técnica, confianza y capacidad para
-                enfrentar nuevos desafíos.
-            </p>
-
-        </div>
-
-        <div class="logro">
-
-            <h3>🧤 Arquero Sub-20</h3>
-
-            <p>
-                Actualmente continúo mi proceso deportivo defendiendo el arco
-                en la categoría Sub-20 de Guatapé, manteniendo el compromiso
-                de crecer cada temporada.
-            </p>
-
-        </div>
-
-        <div class="logro">
-
-            <h3>⚽ Disciplina</h3>
-
-            <p>
-                Mi mayor logro ha sido mantener la disciplina y la constancia
-                durante cada entrenamiento, entendiendo que los grandes sueños
-                se construyen con trabajo diario.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="galeria">
-
-    <h2 class="titulo">📸 Mi Galería</h2>
-
-    <p class="texto-galeria">
-
-        Cada fotografía representa un momento importante dentro de mi
-        trayectoria deportiva.
-
-    </p>
-
-    <div class="galeria">
-
-        <div class="foto">
-
-            <img src="img/isaac1.jpg" alt="Entrenamiento">
-
-            <div class="overlay">
-
-                <h3>Entrenamiento</h3>
-
-            </div>
-
-        </div>
-
-        <div class="foto">
-
-            <img src="img/isaac2.jpg" alt="Partido">
-
-            <div class="overlay">
-
-                <h3>Partido Oficial</h3>
-
-            </div>
-
-        </div>
-
-        <div class="foto">
-
-            <img src="img/isaac3.jpg" alt="Arquero">
-
-            <div class="overlay">
-
-                <h3>Defendiendo el Arco</h3>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="objetivos" class="glass">
-
-    <h2>🎯 Objetivos</h2>
-
-    <div class="objetivos-grid">
-
-        <div class="objetivo-card">
-
-            <h3>⚽ Corto Plazo</h3>
-
-            <p>
-
-                Consolidarme como uno de los mejores arqueros
-                de la categoría Sub-20.
-
-            </p>
-
-        </div>
-
-        <div class="objetivo-card">
-
-            <h3>💙 Mediano Plazo</h3>
-
-            <p>
-
-                Representar nuevamente a Bolívar en competencias
-                nacionales.
-
-            </p>
-
-        </div>
-
-        <div class="objetivo-card">
-
-            <h3>🇨🇴 Largo Plazo</h3>
-
-            <p>
-
-                Llegar al profesionalismo y defender los colores
-                de Colombia en torneos internacionales.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="frase">
-
-    <h2>
-
-        "Un arquero no se mide por las veces que cae,
-        sino por las veces que tiene el valor de levantarse
-        para defender una vez más su arco."
-
-    </h2>
-
-</section>
-
-<section class="contacto">
-
-    <h2>💪 Mi Compromiso</h2>
-
-    <p>
-
-        Seguir entrenando con humildad, esfuerzo y dedicación,
-        demostrando que los sueños se alcanzan trabajando
-        todos los días.
-
-    </p>
-<footer>
-
-    <div class="footer-contenido">
-
-        <h2>ISAAC DAVID SARKAR MACHADO</h2>
-
-        <p>Portafolio Oficial | Arquero de Fútbol Sala y Fútbol 11</p>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 Todos los derechos reservados.
+        <p contenteditable="true">
+            En esta página se puede organizar información usando títulos,
+            listas y una tabla. Haz clic en los textos para cambiarlos.
         </p>
 
-        <p class="autor">
-            Desarrollado y diseñado por <strong>Isaac David Sarkar Machado</strong>
-        </p>
+        <button id="cambiarColor">Cambiar color del título</button>
+    </section>
 
-    </div>
+    <section>
+        <h2 contenteditable="true">Lista ordenada</h2>
 
-</footer>
+        <ol>
+            <li contenteditable="true">Primer elemento</li>
+            <li contenteditable="true">Segundo elemento</li>
+            <li contenteditable="true">Tercer elemento</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 contenteditable="true">Lista no ordenada</h2>
+
+        <ul>
+            <li contenteditable="true">Fútbol sala</li>
+            <li contenteditable="true">Entrenamiento</li>
+            <li contenteditable="true">Trabajo en equipo</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 contenteditable="true">Tabla de información</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th contenteditable="true">Nombre</th>
+                    <th contenteditable="true">Edad</th>
+                    <th contenteditable="true">Curso</th>
+                    <th contenteditable="true">Deporte</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Isaac</td>
+                    <td contenteditable="true">16</td>
+                    <td contenteditable="true">10A</td>
+                    <td contenteditable="true">Fútbol sala</td>
+                </tr>
+
+                <tr>
+                    <td contenteditable="true">Estudiante 2</td>
+                    <td contenteditable="true">15</td>
+                    <td contenteditable="true">10A</td>
+                    <td contenteditable="true">Fútbol</td>
+                </tr>
+
+                <tr>
+                    <td contenteditable="true">Estudiante 3</td>
+                    <td contenteditable="true">16</td>
+                    <td contenteditable="true">10B</td>
+                    <td contenteditable="true">Baloncesto</td>
+                </tr>
+
+                <tr>
+                    <td contenteditable="true">Estudiante 4</td>
+                    <td contenteditable="true">15</td>
+                    <td contenteditable="true">9A</td>
+                    <td contenteditable="true">Voleibol</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        const boton = document.getElementById("cambiarColor");
+        let azul = true;
+
+        boton.addEventListener("click", function () {
+            const titulo = document.querySelector("h1");
+
+            titulo.style.color = azul ? "#a85b24" : "#245b78";
+
+            azul = !azul;
+        });
+    </script>
+
+</body>
+</html>
