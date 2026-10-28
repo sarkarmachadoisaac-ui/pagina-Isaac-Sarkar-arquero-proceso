@@ -2,177 +2,361 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de información</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INFORWEB | Isaac Sarkar</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f7fa;
-            color: #222;
-            margin: 25px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h1 {
-            color: #245b78;
-            text-align: center;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        h2 {
-            color: #a85b24;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7ff;
+    color: #1b2940;
+    line-height: 1.6;
+}
 
-        section {
-            background-color: white;
-            border: 1px solid #c8dce5;
-            padding: 15px;
-            margin-bottom: 18px;
-        }
+header {
+    background: #142b52;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
 
-        th, td {
-            border: 1px solid #9bb6c3;
-            padding: 8px;
-            text-align: left;
-        }
+.logo-icon {
+    background: #55d6e8;
+    color: #142b52;
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
 
-        th {
-            background-color: #d8eaf2;
-        }
+.logo span {
+    color: #55d6e8;
+}
 
-        tr:nth-child(even) {
-            background-color: #f4f8fa;
-        }
+nav {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
 
-        li {
-            margin: 6px 0;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 18px;
+    transition: 0.25s;
+}
 
-        button {
-            background-color: #397da0;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-        }
+nav a:hover {
+    background: #55d6e8;
+    color: #142b52;
+}
 
-        button:hover {
-            background-color: #285e79;
-        }
+.hero {
+    min-height: 390px;
+    padding: 65px 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d7f7ff, #e8e7ff, white);
+}
 
-        section:focus-within {
-            border-color: #397da0;
-        }
+.etiqueta {
+    background: white;
+    color: #2466a5;
+    border: 1px solid #b9e8f1;
+    border-radius: 20px;
+    padding: 6px 15px;
+    margin-bottom: 18px;
+}
 
-        @media (max-width: 600px) {
-            body {
-                margin: 12px;
-            }
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
 
-            section {
-                overflow-x: auto;
-            }
-        }
-    </style>
+.hero h1 span {
+    color: #2865c7;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #4b5a72;
+    margin-bottom: 24px;
+}
+
+.boton {
+    display: inline-block;
+    background: #2865c7;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 24px;
+    padding: 11px 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.boton:hover {
+    background: #17458f;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 45px 8%;
+    scroll-margin-top: 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: #142b52;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.descripcion {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 26px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #dce8fb;
+    box-shadow: 0 5px 18px #142b5212;
+}
+
+.descripcion p + p {
+    margin-top: 12px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 18px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 23px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #dce8fb;
+    box-shadow: 0 5px 18px #142b5210;
+    transition: 0.25s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 22px #2865c72b;
+}
+
+.icono {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.tarjeta h3 {
+    color: #2865c7;
+    margin-bottom: 8px;
+}
+
+#contacto {
+    background: #e4efff;
+    text-align: center;
+}
+
+#contacto p {
+    margin: 7px 0;
+}
+
+#mensaje {
+    min-height: 25px;
+    margin-top: 10px;
+    color: #17458f;
+    font-weight: bold;
+}
+
+footer {
+    background: #142b52;
+    color: white;
+    text-align: center;
+    padding: 19px 8%;
+    font-size: 14px;
+}
+
+footer span {
+    color: #55d6e8;
+}
+
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <h1 contenteditable="true">Información general</h1>
+<header>
+    <div class="logo">
+        <div class="logo-icon">IS</div>
+        <div>INFOR<span>WEB</span></div>
+    </div>
 
-    <section>
-        <h2 contenteditable="true">Descripción</h2>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
-        <p contenteditable="true">
-            En esta página se puede organizar información usando títulos,
-            listas y una tabla. Haz clic en los textos para cambiarlos.
+<main>
+
+    <section class="hero" id="inicio">
+        <div class="etiqueta">💻 Proyecto de informática</div>
+
+        <h1>Aprende, crea y descubre con <span>INFORWEB</span></h1>
+
+        <p>
+            Un proyecto pensado para practicar informática,
+            fortalecer nuestros conocimientos y aprender a crear
+            páginas web de una forma sencilla, creativa y divertida.
         </p>
 
-        <button id="cambiarColor">Cambiar color del título</button>
+        <a class="boton" href="#proyectos">Explorar proyectos</a>
     </section>
 
-    <section>
-        <h2 contenteditable="true">Lista ordenada</h2>
+    <section id="nosotros">
+        <h2 class="titulo-seccion">¿De qué trata el proyecto?</h2>
 
-        <ol>
-            <li contenteditable="true">Primer elemento</li>
-            <li contenteditable="true">Segundo elemento</li>
-            <li contenteditable="true">Tercer elemento</li>
-        </ol>
+        <div class="descripcion">
+            <p>
+                <strong>INFORWEB</strong> es un proyecto educativo creado
+                para afianzar lo aprendido en Tecnología e Informática.
+                La idea es poner en práctica conocimientos de HTML,
+                CSS y JavaScript mediante la creación de páginas web.
+            </p>
+
+            <p>
+                También busca desarrollar la creatividad, mejorar el
+                manejo de herramientas digitales y aprender a organizar
+                la información en internet.
+            </p>
+        </div>
     </section>
 
-    <section>
-        <h2 contenteditable="true">Lista no ordenada</h2>
+    <section id="proyectos">
+        <h2 class="titulo-seccion">¿Qué podemos aprender?</h2>
 
-        <ul>
-            <li contenteditable="true">Fútbol sala</li>
-            <li contenteditable="true">Entrenamiento</li>
-            <li contenteditable="true">Trabajo en equipo</li>
-        </ul>
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <div class="icono">🧱</div>
+                <h3>HTML</h3>
+                <p>
+                    Organizar textos, títulos, imágenes y secciones
+                    de una página.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="icono">🎨</div>
+                <h3>CSS</h3>
+                <p>
+                    Agregar colores, estilos y diseños para mejorar
+                    la presentación.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="icono">⚡</div>
+                <h3>JavaScript</h3>
+                <p>
+                    Crear botones e interacciones sencillas
+                    para la página web.
+                </p>
+            </article>
+
+        </div>
     </section>
 
-    <section>
-        <h2 contenteditable="true">Tabla de información</h2>
+    <section id="contacto">
+        <h2 class="titulo-seccion">Contacto</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th contenteditable="true">Nombre</th>
-                    <th contenteditable="true">Edad</th>
-                    <th contenteditable="true">Curso</th>
-                    <th contenteditable="true">Deporte</th>
-                </tr>
-            </thead>
+        <p><strong>Autor:</strong> Isaac Sarkar</p>
+        <p><strong>Teléfono:</strong> 311-655-72-8-19</p>
 
-            <tbody>
-                <tr>
-                    <td contenteditable="true">Isaac</td>
-                    <td contenteditable="true">16</td>
-                    <td contenteditable="true">10A</td>
-                    <td contenteditable="true">Fútbol sala</td>
-                </tr>
+        <button class="boton" id="botonSaludo">
+            Enviar saludo
+        </button>
 
-                <tr>
-                    <td contenteditable="true">Estudiante 2</td>
-                    <td contenteditable="true">15</td>
-                    <td contenteditable="true">10A</td>
-                    <td contenteditable="true">Fútbol</td>
-                </tr>
-
-                <tr>
-                    <td contenteditable="true">Estudiante 3</td>
-                    <td contenteditable="true">16</td>
-                    <td contenteditable="true">10B</td>
-                    <td contenteditable="true">Baloncesto</td>
-                </tr>
-
-                <tr>
-                    <td contenteditable="true">Estudiante 4</td>
-                    <td contenteditable="true">15</td>
-                    <td contenteditable="true">9A</td>
-                    <td contenteditable="true">Voleibol</td>
-                </tr>
-            </tbody>
-        </table>
+        <p id="mensaje"></p>
     </section>
 
-    <script>
-        const boton = document.getElementById("cambiarColor");
-        let azul = true;
+</main>
 
-        boton.addEventListener("click", function () {
-            const titulo = document.querySelector("h1");
+<footer>
+    <p>
+        © <span id="anio"></span>
+        Derechos reservados a <span>Isaac Sarkar</span>
+        | Proyecto INFORWEB
+    </p>
+</footer>
 
-            titulo.style.color = azul ? "#a85b24" : "#245b78";
+<script>
+document.getElementById("anio").textContent =
+    new Date().getFullYear();
 
-            azul = !azul;
-        });
-    </script>
+document.getElementById("botonSaludo").addEventListener("click", function() {
+    document.getElementById("mensaje").textContent =
+        "¡Gracias por visitar INFORWEB! Sigue aprendiendo. 😊";
+});
+</script>
 
 </body>
 </html>
